@@ -19,6 +19,7 @@
         android:textStyle="bold" />
 
     <EditText
+        android:id="@+id/edittextSothunhat"
         android:maxLength="5"
         android:inputType="number"
         android:imeOptions="actionNext"
@@ -30,10 +31,11 @@
         android:layout_marginTop="30dp"
         android:importantForAutofill="no" />
     <EditText
+        android:id="@+id/edittextSothuhai"
         android:importantForAutofill="no"
         android:maxLength="5"
         android:inputType="number"
-        android:imeOptions="actionNext"
+        android:imeOptions="actionDone"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:hint="Nhập số thứ hai"
@@ -41,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp" />
     <Button
+        android:id="@+id/buttonReset"
         android:layout_marginRight="40dp"
         android:layout_gravity="right"
         android:layout_marginTop="30dp"
@@ -56,12 +59,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
+            android:id="@+id/buttonCong"
             android:textStyle="bold"
             android:textSize="20sp"
             android:text="+"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/buttonTru"
             android:textStyle="bold"
             android:textSize="20sp"
             android:text="-"
@@ -75,12 +80,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
+            android:id="@+id/buttonNhan"
             android:textStyle="bold"
             android:textSize="20sp"
             android:text="*"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/buttonChia"
             android:textStyle="bold"
             android:textSize="20sp"
             android:text="/"
@@ -89,11 +96,12 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
     <TextView
+        android:id="@+id/textviewKetqua"
         android:textColor="#00ACC1"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:textSize="20sp"
-        android:text="Kết quả = 10"
+        tools:text="Kết quả = 10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </LinearLayout>
